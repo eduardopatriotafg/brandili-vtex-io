@@ -1,0 +1,40 @@
+{
+    "header": {
+        "blocks": [
+            "header-layout.desktop",
+            "header-layout.mobile"
+        ]
+    },
+    "header.full": {
+        "blocks": [
+            "header-layout.desktop",
+            "header-layout.mobile"
+        ]
+    },
+    "header-layout.desktop": {
+        "title": "Header Desktop",
+        "children": [
+            "helmet-component",
+            "flex-layout.row#header",
+						"logo-redirect"
+        ],
+        "props": {
+            "blockClass": "header-desktop",
+            "sticky": true,
+            "fullWidth": false
+        }
+    },
+    "header-layout.mobile": {
+        "title": "Header Mobile",
+        "children": [
+            "helmet-component",
+            "flex-layout.row#header",
+						"logo-redirect"
+        ],
+        "props": {
+            "blockClass": "header-mobile",
+            "sticky": true,
+            "fullWidth": false
+        }
+    }
+}

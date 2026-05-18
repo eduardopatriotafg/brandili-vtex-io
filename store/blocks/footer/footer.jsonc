@@ -1,0 +1,107 @@
+{
+    "footer": {
+        "blocks": [
+            "footer-layout.desktop",
+			"footer-layout.mobile"
+        ]
+    },
+    
+    "footer-layout.desktop": {
+        "props": {
+            "blockClass": "footer-desktop"
+        },
+        "children": [
+            "flex-layout.row#operado-por"
+        ]
+    },
+
+    "footer-layout.mobile": {
+        "props": {
+            "blockClass": "footer-mobile"
+        },
+        "children": [
+            "flex-layout.row#operado-por"
+        ]
+    },
+    
+    "flex-layout.row#operado-por": {
+        "title": "Texto Operado Por",
+        "props": {
+            "blockClass": "row-operado-por"
+        },
+        "children": [
+            "flex-layout.col#operado-por"
+        ]
+    },
+    
+    "flex-layout.col#operado-por": {
+        "title": "Coluna Operado por",
+        "props": {
+            "blockClass": "column-operado-por"
+        },
+        "children": [
+            "rich-text#operado-por",
+            "flex-layout.row#gerenciado-por"
+        ]
+    },
+
+    "rich-text#operado-por": {
+        "title": "Conteúdo - Operado Por",
+        "props": {
+            "blockClass": "text-operado-por",
+            "text": "A loja **Brandili** é operada pela Social S.A. CNPJ: 28.511.223/0004-85 /Endereço Avenida Portugal, 46, Galpão 01 Setor C1 - Itapevi - SP, CEP: 06696-060.",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "flex-layout.row#gerenciado-por": {
+        "title": "Gerenciado Por",
+        "props": {
+            "blockClass": "managed-by",
+            "colJustify": "center"
+        },
+        "children": [
+            "flex-layout.col#gerenciado-por"
+        ]
+    },
+    
+    "flex-layout.col#gerenciado-por": {
+        "title": "Coluna Operado por",
+        "props": {
+            "blockClass": "column-gerenciado-por",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "rich-text#gerenciado-por",
+            "link#social"
+        ]
+    },
+
+    "link#social": {
+        "title": "Link Social Site",
+        "props": {
+            "blockClass": "link-managed-by"
+        },
+        "children": [
+            "image#social"
+        ]
+    },
+
+    "rich-text#gerenciado-por": {
+        "title": "Texto Gerenciado por",
+        "props": {
+            "blockClass": "managed-by-text",
+            "text": "Gerenciado por:",
+            "textAlignment": "CENTER"
+        }
+    },
+
+    "image#social": {
+        "title": "Image Social",
+        "props": {
+            "blockClass": "image-social",
+            "maxWidth": "141px",
+            "src": "assets/img/svg/social.svg"
+        }
+    }
+}

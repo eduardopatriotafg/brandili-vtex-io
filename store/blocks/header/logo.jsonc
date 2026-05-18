@@ -1,0 +1,39 @@
+{
+    "flex-layout.row#header": {
+        "title": "header logo",
+        "props": {
+            "blockClass": "header-logo",
+            "horizontalAlign": "center",
+            "colJustify": "around",
+            "colSizing": "auto"
+        },
+        "children": [
+            "link#header-logo",
+            "rich-text#ambiente-seguro"
+        ]
+    },
+    "link#header-logo": {
+        "title": "header logo link",
+        "props": {
+            "blockClass": "header-logo-link",
+            "href": "/"
+        },
+        "children": [
+            "image#header-logo"
+        ]
+    },
+    "image#header-logo": {
+        "title": "header logo image",
+        "props": {
+            "src": "assets/img/logo-brandili.png",
+            "blockClass": "header-logo-image"
+        }
+    },
+    "rich-text#ambiente-seguro": {
+        "title": "Texto ambiente seguro",
+        "props": {
+            "blockClass": "secure-env",
+            "text": "Ambiente 100% Seguro"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.flex {
+
+    &Row {
+
+        &Content {
+
+            &--row-operado-por {
+                padding: 40px 16px;
+                background: #f7f7f7;
+
+                @media (max-height:780px) {
+                    padding: 20px 16px;
+
+                }
+                @media (max-height:710px) {
+                    padding: 5px 16px;
+
+                }
+
+            }
+        }
+    }
+}
+
+.flexCol--column-gerenciado-por{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.flexColChild--column-gerenciado-por {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+   
+}

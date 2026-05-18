@@ -1,0 +1,19 @@
+@import "./modules/login/login";
+
+.dontHaveAccount {
+    max-width: 150px;
+    text-align: center;
+}
+
+:global(.vtex-account) {
+    :global(.w-100.mw9.pv7-m.pv9-l.flex) {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    :global(.vtex-pageHeader__container) {
+
+        padding: 0 1rem;
+
+    }
+}

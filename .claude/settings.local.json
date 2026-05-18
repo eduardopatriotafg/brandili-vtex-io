@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls C:/Users/Eduardo.Patriota/Documents/FG/lojasmel/)",
+      "Read(//c/Users/Eduardo.Patriota/Documents/FG/lojasmel/**)",
+      "Bash(ls C:/Users/Eduardo.Patriota/Documents/FG/lojasmel/store/)",
+      "Read(//c/Users/Eduardo.Patriota/Documents/FG/lojasmel/store/**)"
+    ]
+  }
+}

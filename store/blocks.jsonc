@@ -1,0 +1,56 @@
+/* Blocks can be defined both on the store/blocks.json file, and in any number of json
+ * files inside the store/blocks directory, with any arbitrary directory structure.
+ *
+ * Additionally, all blocks files can support comments, such as this one, if given the
+ * .jsonc file extension.
+ *
+ * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
+ * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
+ */
+{
+	"store.orderplaced": {
+		"blocks": [
+			"order-placed"
+		]
+	},
+	"store.account": {
+		"blocks": [
+			"my-account-breadcrumb",
+			"btn-trade-prod",
+			"my-account"
+		],
+		"parent": {
+			"challenge": "challenge.profile"
+		}
+	},
+	"challenge.profile": {
+		"props": {
+			"pageId": "AUTHENTICATION"
+		}
+	},
+	"store.login": {
+		"blocks": [
+			"rich-text#back-home",
+			"login-content#default"
+		]
+	},
+	"rich-text#back-home": {
+		"props": {
+			"blockClass": "back-home",
+			"text": "[Página Inicial](/)"
+		}
+	},
+	"login-content#default": {
+		"props": {
+			"isInitialScreenOptionOnly": false,
+			"defaultOption": 1,
+			"showPasswordVerificationIntoTooltip": true,
+			 "alwaysShowForm": true
+		}
+	},
+	"breadcrumb": {
+		"props": {
+			"showOnMobile": true
+		}
+	}
+}
