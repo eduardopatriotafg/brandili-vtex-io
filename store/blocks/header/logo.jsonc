@@ -19,16 +19,18 @@
             "href": "/"
         },
         "children": [
-            "image#header-logo"
+            "image#header-logo-header"  
         ]
     },
-    "image#header-logo": {
+    "image#header-logo-header": {
         "title": "header logo image",
         "props": {
             "src": "assets/img/logo-brandili.png",
-            "blockClass": "header-logo-image"
+            "blockClass": "header-logo-image",
+            "maxWidth": "200px"
         }
     },
+   
     "rich-text#ambiente-seguro": {
         "title": "Texto ambiente seguro",
         "props": {
