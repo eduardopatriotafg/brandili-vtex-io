@@ -17,3 +17,10 @@
 
     }
 }
+
+:global(.render-container.render-route-store-account) :global(.vtex-store__template.bg-base) :global(.flex.flex-grow-1.bg-below-element) {
+    @media (max-height:815px) {
+       display: none;
+
+    }
+}
